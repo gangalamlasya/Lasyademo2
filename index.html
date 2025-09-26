@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VMMQT1H0BD"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-VMMQT1H0BD');
-</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Basic Website</title>
@@ -77,23 +68,20 @@
     <a href="#">Home</a>
     <a href="#">About</a>
     <a href="#">Contact</a>
+    <!-- Link to another website -->
+    <a href="https://openai.com" target="_blank">Visit OpenAI</a>
   </nav>
 
   <div class="container">
     <h2>Hello, Visitor!</h2>
     <p id="message"></p>
-    <button onclick="changeMessage()">Click Me</button>
+    <!-- Button that opens website instead of changing text -->
+    <button onclick="window.open('https://openai.com', '_blank')">Go to OpenAI</button>
   </div>
 
   <footer>
     <p>© 2025 My Basic Website. All rights reserved.</p>
   </footer>
-
-  <script>
-    function changeMessage() {
-      document.getElementById("message").innerText = "🎉 You clicked the button! Welcome to my site!";
-    }
-  </script>
 
 </body>
 </html>
